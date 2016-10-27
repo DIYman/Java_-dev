@@ -9,12 +9,10 @@ public class TotalSales{
 
     public static void main(String[] args){
 
-        // create colums for each salesperson
         for(int i=0; i<arrSales.length; i++){
             arrSales[i] = new int[SALESPEOPLE];
         }
 
-        // populate with random data
         for(int row=0; row<arrSales.length; row++){
             for(int column=0; column<arrSales[row].length; column++){
                 arrSales[row][column] = randomGenerator.nextInt(9999);
@@ -42,7 +40,6 @@ public class TotalSales{
             System.out.println();
         }
 
-        // print and calculate column totals (salespeople)
         System.out.printf("\n%8s ", "Total");
 
         for(int col=0; col<SALESPEOPLE; col++){
