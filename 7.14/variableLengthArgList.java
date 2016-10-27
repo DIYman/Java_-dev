@@ -13,7 +13,7 @@ public class VariableLengthArgumentList{
         System.out.printf("1 * 0 = %d\n",
                 variableProduct(1));
     }
-    // returns the product of the arguments
+
     public static int variableProduct(int... args){
         for(int i=1; i<args.length; i++){
             args[0] *= args[i];
